@@ -1,5 +1,14 @@
 # AppEmpleados
 
+Aplicacion de registro de empleados. Desarrollada con el framework Angular
+
+## Images of the prototype and its operation:
+![Captura de pantalla (91)](https://user-images.githubusercontent.com/83617933/216840582-b08b15e3-aab2-4fa2-99eb-3e232074caa2.png)
+### Add employee:
+![Captura de pantalla (92)](https://user-images.githubusercontent.com/83617933/216840942-95bb4f73-795c-4bc7-b76a-24a99c6449b6.png)
+![Captura de pantalla (93)](https://user-images.githubusercontent.com/83617933/216841131-d1b5aca2-d849-4601-a4a5-da46f352659f.jpg)
+
+# AngularApp
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.3.
 
 ## Development server
