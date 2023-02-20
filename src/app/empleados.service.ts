@@ -24,8 +24,27 @@ export class EmpleadosService{
       ];
 
       agregarEmpleadoService(miEmpleado:Empleado){
+
         this.ventanaEmergente.muestraMensaje("Miembro a agregar: " + "/n" + 
         miEmpleado.nombre + "/n" + "Salario: " + miEmpleado.salario);
+
         this.empleados.push(miEmpleado);
+      }
+
+      encontrarEmpleado(indice:number){
+
+        let empleado: Empleado= this.empleados[indice];
+
+        return empleado;
+      }
+
+      actualizarEmpleado(indice:number, empleado:Empleado){
+
+        let empledoUpdate = this.empleados[indice];
+
+        empledoUpdate.nombre = empleado.nombre;
+        empledoUpdate.apellido = empleado.apellido;
+        empledoUpdate.cargo = empleado.cargo;
+        empledoUpdate.salario = empleado.salario;
       }
 }
