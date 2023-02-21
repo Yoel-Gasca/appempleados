@@ -46,6 +46,13 @@ export class ActualizaComponentComponent implements OnInit {
     this.router.navigate([""]); //rediriccion automatica
   }
 
+  eliminarEmpleado(){
+
+    this.empleadosService.eliminaEmpleado(this.indice);
+
+    this.router.navigate(['']);
+  }
+
 
   cuadroNombre:string="";
   cuadroApellido:string="";
