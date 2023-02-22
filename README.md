@@ -1,4 +1,4 @@
-# AppEmpleados 
+# AppEmpleados
 
 Aplicacion de registro de empleados. Desarrollada con el framework Angular
 
