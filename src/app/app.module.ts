@@ -13,6 +13,7 @@ import { InfoComponetComponent } from './info-componet/info-componet.component';
 import { ContactoComponentComponent } from './contacto-component/contacto-component.component';
 import { RouterModule, Routes } from '@angular/router';
 import { ActualizaComponentComponent } from './actualiza-component/actualiza-component.component';
+import { ErrorPageComponent } from './error-page/error-page.component';
 
 //Routing
 const appRoutes:Routes=[
@@ -21,7 +22,8 @@ const appRoutes:Routes=[
   {path:'proyectos', component:ProyectosComponentComponent},
   {path:'info', component:InfoComponetComponent},
   {path:'contacto', component:ContactoComponentComponent},
-  {path:'actualiza/:id', component:ActualizaComponentComponent}
+  {path:'actualiza/:id', component:ActualizaComponentComponent},
+  {path:'**', component:ErrorPageComponent}
 
 
 ];
