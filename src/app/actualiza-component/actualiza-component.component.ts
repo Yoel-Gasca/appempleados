@@ -41,7 +41,7 @@ export class ActualizaComponentComponent implements OnInit {
 
   }
 
-  /*actualizaEmpleado(){
+  /*actualizaEmpleado(){ Forma 1
 
     let miEmpleado=new Empleado(this.cuadroNombre, this.cuadroApellido, this.cuadroCargo, this.cuadroSalario);
     //this.miServicio.muestraMensaje("Nombre del empleado: " + miEmpleado.nombre);//inyeccion de servicio

@@ -14,6 +14,8 @@ import { ContactoComponentComponent } from './contacto-component/contacto-compon
 import { RouterModule, Routes } from '@angular/router';
 import { ActualizaComponentComponent } from './actualiza-component/actualiza-component.component';
 import { ErrorPageComponent } from './error-page/error-page.component';
+import { DataServices } from './data.service';
+import { HttpClientModule } from '@angular/common/http';
 
 //Routing
 const appRoutes:Routes=[
@@ -42,9 +44,10 @@ const appRoutes:Routes=[
   imports: [
     BrowserModule,
     FormsModule,
-    RouterModule.forRoot(appRoutes)//Routing
+    RouterModule.forRoot(appRoutes),//Routing
+    HttpClientModule,
   ],
-  providers: [ServicioEmpleadosService, EmpleadosService],//Registro de servicios
+  providers: [ServicioEmpleadosService, EmpleadosService, DataServices],//Registro de servicios
   bootstrap: [AppComponent]
 })
 export class AppModule { }
