@@ -7,9 +7,14 @@ export class DataServices{
 
     constructor(private httpClient:HttpClient){}
 
+    CargarMiembros(){
+
+        return this.httpClient.get('https://empleados-4aa26-default-rtdb.firebaseio.com/datos.json');
+    }
+
     guardarEmpleados(empleados:Empleado[]){
 
-        this.httpClient.post('https://empleados-4aa26-default-rtdb.firebaseio.com/datos.json',empleados).subscribe(
+        this.httpClient.put('https://empleados-4aa26-default-rtdb.firebaseio.com/datos.json',empleados).subscribe(
 
             response=>console.log("Se han guardado los registros:" + response),
 

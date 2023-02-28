@@ -9,14 +9,17 @@ import { ServicioEmpleadosService } from '../servicio-empleados.service';
   styleUrls: ['./home-component.component.css']
 })
 export class HomeComponentComponent implements OnInit {
-  titulo = 'Lista de Empleados';
+  titulo = 'Lista de Motociclistas';
 
   constructor(private miServicio:ServicioEmpleadosService, private empleadosService:EmpleadosService) { 
     //this.empleados=this.empleadosService.empleados;
   }
 
   ngOnInit(): void {
-    this.empleados=this.empleadosService.empleados;
+    //this.empleados=this.empleadosService.empleados;
+    this.empleadosService.ObtenerMiembros().subscribe(motoMiembros=>{
+      console.log(motoMiembros);
+    });
   }
 
   empleados:Empleado[]=[];

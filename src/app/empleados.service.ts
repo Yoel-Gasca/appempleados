@@ -13,8 +13,14 @@ export class EmpleadosService{
 
     }
 
+    ObtenerMiembros(){
+
+      return this.dataService.CargarMiembros();
+    }
+
     //Empleados Precargados
-    empleados:Empleado[]=[
+    empleados:Empleado[]=[];
+    /*empleados:Empleado[]=[
 
         new Empleado("Alberto","Perez","Gerente",7500),
         new Empleado("Juan","Martinez","Abogado",6500),
@@ -22,7 +28,7 @@ export class EmpleadosService{
         new Empleado("Jose","Garcia","Sistemas",5500),
         new Empleado("Francisco","Lopez","Supervisor",4500),
     
-      ];
+      ];*/
       // Crear empleado
       agregarEmpleadoService(miEmpleado:Empleado){
 

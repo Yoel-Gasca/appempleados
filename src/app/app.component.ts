@@ -9,7 +9,7 @@ import { ServicioEmpleadosService } from './servicio-empleados.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  titulo = 'Lista de Empleados';
+  titulo = 'Lista de Motociclistas';
 
   //llamado al servicio creado
   constructor(private miServicio:ServicioEmpleadosService, private empleadosService:EmpleadosService) {
