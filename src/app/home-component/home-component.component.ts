@@ -17,8 +17,14 @@ export class HomeComponentComponent implements OnInit {
 
   ngOnInit(): void {
     //this.empleados=this.empleadosService.empleados;
+
     this.empleadosService.ObtenerMiembros().subscribe(motoMiembros=>{
+
       console.log(motoMiembros);
+
+      this.empleados = Object.values(motoMiembros);
+
+      this.empleadosService.setMiembros(this.empleados);
     });
   }
 

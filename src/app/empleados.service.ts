@@ -13,6 +13,12 @@ export class EmpleadosService{
 
     }
 
+    setMiembros(motoMiembros:Empleado[]){
+
+      this.empleados = motoMiembros;
+      
+    }
+    
     ObtenerMiembros(){
 
       return this.dataService.CargarMiembros();
