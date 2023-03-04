@@ -36,4 +36,17 @@ export class DataServices{
             error=> console.log("Error: " + error),
         )
     }
+
+    //Metodo para Eliminar registros en la BD
+    eliminarMiembro(indice:number){
+
+        let url='https://empleados-4aa26-default-rtdb.firebaseio.com/datos/'+ indice + '.json';
+        
+        this.httpClient.delete(url).subscribe(
+
+            response=>console.log("Se ha eliminado el registro:" + response),
+
+            error=> console.log("Error: " + error),
+        )
+    }
 }
