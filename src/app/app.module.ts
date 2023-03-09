@@ -16,6 +16,7 @@ import { ActualizaComponentComponent } from './actualiza-component/actualiza-com
 import { ErrorPageComponent } from './error-page/error-page.component';
 import { DataServices } from './data.service';
 import { HttpClientModule } from '@angular/common/http';
+import { LoginComponent } from './login/login.component';
 
 //Routing
 const appRoutes:Routes=[
@@ -25,6 +26,7 @@ const appRoutes:Routes=[
   {path:'info', component:InfoComponetComponent},
   {path:'contacto', component:ContactoComponentComponent},
   {path:'actualiza/:id', component:ActualizaComponentComponent},
+  {path:'login', component:LoginComponent},
   {path:'**', component:ErrorPageComponent}
 
 
@@ -39,7 +41,8 @@ const appRoutes:Routes=[
     ProyectosComponentComponent,
     InfoComponetComponent,
     ContactoComponentComponent,
-    ActualizaComponentComponent
+    ActualizaComponentComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
