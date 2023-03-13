@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Empleado } from './empleado.model';
 import { EmpleadosService } from './empleados.service';
 import { ServicioEmpleadosService } from './servicio-empleados.service';
+import firebase from 'firebase/compat/app';
 
 @Component({
   selector: 'app-root',
@@ -17,6 +18,14 @@ export class AppComponent {
    // this.empleados=this.empleadosService.empleados;
   }
 
+  ngOnInit(): void {
+
+    firebase.initializeApp({
+
+      apiKey: "AIzaSyAGyKBUxEFKRvKOXAXJcVsGQAy-YzA08cE",
+      authDomain: "empleados-4aa26.firebaseapp.com",
+    })
+  }
   /*empleados:Empleado[]=[]
 
   agregarEmpleado(){
