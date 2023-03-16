@@ -1,11 +1,11 @@
 <div>
     <br/>
-    <form class="form-group row">
+    <form class="form-group row" #miForm="ngForm" (ngSubmit)="login(miForm)">
         <div class="form-group col-md-3">
-            <input class="form-control" type="email" name="email" placeholder="Email">
+            <input class="form-control" type="email" name="email" placeholder="Email" ngModel>
         </div>
         <div class="form-group col-md-3">
-            <input class="form-control" type="password" name="password" placeholder="Password">
+            <input class="form-control" type="password" name="password" placeholder="Password" ngModel>
         </div>
         <br/><br/>
         <div>

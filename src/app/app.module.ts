@@ -17,6 +17,7 @@ import { ErrorPageComponent } from './error-page/error-page.component';
 import { DataServices } from './data.service';
 import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './login/login.component';
+import { LoginService } from './login/login.service';
 
 //Routing
 const appRoutes:Routes=[
@@ -50,7 +51,7 @@ const appRoutes:Routes=[
     RouterModule.forRoot(appRoutes),//Routing
     HttpClientModule,
   ],
-  providers: [ServicioEmpleadosService, EmpleadosService, DataServices],//Registro de servicios
+  providers: [ServicioEmpleadosService, EmpleadosService, DataServices, LoginService],//Registro de servicios
   bootstrap: [AppComponent]
 })
 export class AppModule { }
