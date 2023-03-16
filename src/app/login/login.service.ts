@@ -38,4 +38,18 @@ export class LoginService{
 
         return this.token;
     }
+
+    //Verifica si el usuario esta logueado
+    userLogin(){
+        
+        return this.token;
+    }
+
+    //Metodo para cerrar sesion de usuario
+    userLogout(){
+        firebase.auth().signOut().then(()=>{
+            this.token="";
+            this.router.navigate(['/']);
+        });
+    }
 }

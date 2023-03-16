@@ -3,6 +3,7 @@ import { Empleado } from './empleado.model';
 import { EmpleadosService } from './empleados.service';
 import { ServicioEmpleadosService } from './servicio-empleados.service';
 import firebase from 'firebase/compat/app';
+import { LoginService } from './login/login.service';
 
 @Component({
   selector: 'app-root',
@@ -13,7 +14,7 @@ export class AppComponent {
   titulo = 'Lista de Motociclistas';
 
   //llamado al servicio creado
-  constructor(private miServicio:ServicioEmpleadosService, private empleadosService:EmpleadosService) {
+  constructor(private miServicio:ServicioEmpleadosService, private empleadosService:EmpleadosService, private loginServive:LoginService) {
 
    // this.empleados=this.empleadosService.empleados;
   }
@@ -26,6 +27,16 @@ export class AppComponent {
       authDomain: "empleados-4aa26.firebaseapp.com",
     })
   }
+
+  //Metodos de login y logout
+  userLogin(){
+    return this.loginServive.userLogin();
+  }
+
+  userLogout(){
+    this.loginServive.userLogout();
+  }
+
   /*empleados:Empleado[]=[]
 
   agregarEmpleado(){
