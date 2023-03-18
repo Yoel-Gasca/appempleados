@@ -21,6 +21,7 @@
     "bootstrap": "^5.2.1",
     "firebase": "^9.17.2",
     "jquery": "^3.6.1",
+    "ngx-cookie-service": "^15.0.0",
     "popper.js": "^1.16.1",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",

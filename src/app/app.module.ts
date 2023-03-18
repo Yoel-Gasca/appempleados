@@ -18,6 +18,7 @@ import { DataServices } from './data.service';
 import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './login/login.component';
 import { LoginService } from './login/login.service';
+import { CookieService } from 'ngx-cookie-service';
 
 //Routing
 const appRoutes:Routes=[
@@ -51,7 +52,7 @@ const appRoutes:Routes=[
     RouterModule.forRoot(appRoutes),//Routing
     HttpClientModule,
   ],
-  providers: [ServicioEmpleadosService, EmpleadosService, DataServices, LoginService],//Registro de servicios
+  providers: [ServicioEmpleadosService, EmpleadosService, DataServices, LoginService, CookieService],//Registro de servicios
   bootstrap: [AppComponent]
 })
 export class AppModule { }
