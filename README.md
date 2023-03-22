@@ -1,6 +1,7 @@
 # AppEmpleados
 
 Aplicacion de registro de empleados. Desarrollada con el framework Angular
+</br>
 <a href="https://yoel-gasca.github.io/appempleados/">Click Aqui para ver prototipo de esta app</a><br>
 
 ## Images of the prototype and its operation:
