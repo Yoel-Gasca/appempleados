@@ -19,6 +19,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './login/login.component';
 import { LoginService } from './login/login.service';
 import { CookieService } from 'ngx-cookie-service';
+import { LoginGuardian } from './login/login-guardian';
 
 //Routing
 const appRoutes:Routes=[
@@ -26,7 +27,7 @@ const appRoutes:Routes=[
   {path:'', component:HomeComponentComponent}, 
   {path:'proyectos', component:ProyectosComponentComponent},
   {path:'info', component:InfoComponetComponent},
-  {path:'contacto', component:ContactoComponentComponent},
+  {path:'contacto', component:ContactoComponentComponent, canActivate:[LoginGuardian]},//solo se visualiza si se loguea
   {path:'actualiza/:id', component:ActualizaComponentComponent},
   {path:'login', component:LoginComponent},
   {path:'**', component:ErrorPageComponent}
@@ -52,7 +53,7 @@ const appRoutes:Routes=[
     RouterModule.forRoot(appRoutes),//Routing
     HttpClientModule,
   ],
-  providers: [ServicioEmpleadosService, EmpleadosService, DataServices, LoginService, CookieService],//Registro de servicios
+  providers: [ServicioEmpleadosService, EmpleadosService, DataServices, LoginService, CookieService, LoginGuardian],//Registro de servicios
   bootstrap: [AppComponent]
 })
 export class AppModule { }
