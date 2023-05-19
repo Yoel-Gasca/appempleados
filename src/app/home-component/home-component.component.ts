@@ -9,7 +9,7 @@ import { ServicioEmpleadosService } from '../servicio-empleados.service';
   styleUrls: ['./home-component.component.css']
 })
 export class HomeComponentComponent implements OnInit {
-  titulo = 'Lista de Motociclistas';
+  titulo = 'Registro de empleados';
 
   constructor(private miServicio:ServicioEmpleadosService, private empleadosService:EmpleadosService) { 
     //this.empleados=this.empleadosService.empleados;
