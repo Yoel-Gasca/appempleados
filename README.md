@@ -1,14 +1,20 @@
 # AppEmpleados
 
-Aplicacion de registro de empleados. Desarrollada con el framework Angular
+Aplicación web para registrar automáticamente los datos de un padrón de empleados en una base de datos.
 </br>
-<a href="https://yoel-gasca.github.io/appempleados/">Click Aqui para ver prototipo de esta app</a><br>
+<a href="https://yoel-gasca.github.io/appempleados/">Prototipo de esta app</a><br>
 
 ## Images of the prototype and its operation:
 ![Captura de pantalla (91)](https://user-images.githubusercontent.com/83617933/216840582-b08b15e3-aab2-4fa2-99eb-3e232074caa2.png)
 ### Add employee:
 ![Captura de pantalla (92)](https://user-images.githubusercontent.com/83617933/216840942-95bb4f73-795c-4bc7-b76a-24a99c6449b6.png)
 ![Captura de pantalla (93)](https://user-images.githubusercontent.com/83617933/216841131-d1b5aca2-d849-4601-a4a5-da46f352659f.jpg)
+
+## Tecnologías utilizadas para este proyecto:<br/>
+- Framework utilizado: Angular<br>
+- Gestor de Base de datos: Firebase<br/>
+- Plataforma de la app: Web <br/>
+- Lenguaje de programación utilizado: TypeScript<br/> <br/>
 
 # AngularApp
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.3.
