@@ -2,7 +2,7 @@
 
 Aplicación web para registrar automáticamente los datos de un padrón de empleados en una base de datos.
 </br>
-<a href="https://yoel-gasca.github.io/appempleados/">Prototipo de esta app</a><br>
+<h3><a href="https://yoel-gasca.github.io/appempleados/">Prototipo de esta app</a></h3><br>
 
 ## Images of the prototype and its operation:
 ![Captura de pantalla (91)](https://user-images.githubusercontent.com/83617933/216840582-b08b15e3-aab2-4fa2-99eb-3e232074caa2.png)
